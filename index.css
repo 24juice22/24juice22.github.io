@@ -180,7 +180,7 @@ h3 {
 }
 
 .container-about {
-    padding-bottom: 10rem;
+    padding-bottom: 3rem;
 }
 
 .about__title {
@@ -191,6 +191,153 @@ h3 {
     margin: 3rem 0;
     font-size: 2rem;
 }
+
+.animation-wrapper {
+    margin-bottom: 10rem;
+}
+
+.animation {
+    height: 36rem;
+    max-width: 300px;
+    position: relative;
+    margin: 0 auto;
+}
+
+@keyframes bounce {
+    0% {top: 20%; left: 8%;}
+    50% {top: 10%; left: 16%;}
+    100% {top: 20%; left: 8%;}
+}
+
+.about__img {
+    width: 15rem;
+    height: 16rem;
+    border: 4px solid #000071;
+    border-radius: 8px;
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    z-index: 2;
+    animation-name: bounce;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+.animation__box {
+    width: 15rem;
+    height: 16rem;
+    border: 4px solid #000071;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    top: 25%;
+    
+}
+
+.animation__box > p {
+    color: #000071;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+    padding: 2.5rem 0;
+}
+
+.box {
+    border: 4px solid #000071;
+    height: 10.5%;
+    width: 13.5%;
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000071;
+}
+
+@keyframes box1{
+    0% {left: 37%}
+    10% {left: 21%}
+    14% {background-color: #000071; border-color: #000071; color:white;}
+    15% {background-color: aqua; border-color: aqua; color:#000071;}
+    29% {background-color: aqua; border-color: aqua; color:#000071;}
+    30% {background-color: #000071; border-color: #000071; color:white;}
+    32.5% {left: 21%}
+    42.5% {left: 37%}
+}
+
+.box-1 {
+    left: 37%;
+    background-color: #000071;
+    color: white;
+    animation-name: box1;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes box2{
+    0% {left: 21%}
+    10% {left: 37%}
+    14% {background-color: white; border-color: #000071;}
+    15% {background-color: aqua; border-color: aqua;}
+    29% {background-color: aqua; border-color: aqua;}
+    30% {background-color: white; border-color: #000071;}
+    32.5% {left: 37%}
+    42.5% {left: 21%}
+}
+
+.box-2 {
+    left: 21%;
+    animation-name: box2;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes box3 {
+    0% {left: 53%; bottom: 12.5%}
+    10% {left: 53%; bottom: 0%}
+    40% {left: 53%; bottom: 0%}
+    50% {left: 53%; bottom: 12.5%}
+}
+
+.box-3 {
+    left: 53%;
+    bottom: 12.5%;
+    background-color: aqua;
+    border-color: aqua;
+    animation-name: box3;
+    animation-duration: 8s;
+    animation-delay: 1.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes box4 {
+    0% {left: 53%}
+    15% {left: 69%}
+    39% {background-color: white; border-color: #000071;}
+    40% {background-color: aqua; border-color: aqua;}
+    54% {background-color: aqua; border-color: aqua;}
+    55% {background-color: white; border-color: #000071;}
+    80% {left: 69%}
+    87% {left: 53%}
+}
+
+.box-4 {
+    left: 53%;
+    animation-name: box4;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+.box > p {
+    font-size: 3.5rem;
+    font-family: 'Roboto Slab', serif;
+
+}
+
 
 .about__attributes {
     padding: 10rem 0;
