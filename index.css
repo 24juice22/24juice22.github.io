@@ -189,7 +189,7 @@ a {
 }
 
 .about__body {
-    margin: 3rem 0 4rem;
+    margin: 3rem 0 3rem;
     font-size: 2rem;
 }
 
@@ -217,51 +217,67 @@ a {
 }
 
 .animation {
-    height: 36rem;
+    height: 35rem;
     max-width: 300px;
     position: relative;
     margin: 0 auto;
 }
 
 @keyframes bounce {
-    0% {top: 20%; left: 8%;}
-    50% {top: 10%; left: 16%;}
-    100% {top: 20%; left: 8%;}
+    0% {top: 7%; left: 20%;}
+    50% {top: 2%; left: 27%;}
+    100% {top: 7%; left: 20%;}
 }
 
 .about__img {
-    width: 15rem;
-    height: 16rem;
+    width: 20rem;
+    height: 21rem;
     border: 4px solid #000071;
-    border-radius: 8px;
+    border-radius: 18px;
     position: absolute;
-    top: 20%;
-    left: 8%;
+    top: 9%;
+    left: 20%;
     z-index: 2;
     animation-name: bounce;
     animation-duration: 8s;
     animation-iteration-count: infinite;
+    transform: rotate(6deg);
 }
 
 .animation__box {
-    width: 15rem;
-    height: 16rem;
+    width: 20rem;
+    height: 21rem;
     border: 4px solid #000071;
-    border-radius: 8px;
+    border-radius: 18px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     position: absolute;
-    top: 25%;
-    
+    top: 15%;
+    left: 6%;
+    transform: rotate(6deg);
+}
+
+@keyframes hmmm {
+    0% {padding: 2.5rem 0}
+    34% {background-color: white;}
+    35% {padding: .5rem 0; background-color: aqua;}
+    49% {padding: .5rem 0; background-color: aqua}
+    50% {background-color: white;}
+    100% {padding: 2.5rem 0}
 }
 
 .animation__box > p {
     color: #000071;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 3.5rem;
+    font-family: 'Roboto Slab', serif;
     margin: 0;
     padding: 2.5rem 0;
+    animation-name: hmmm;
+    animation-duration: 8s;
+    animation-delay: .4s;
+    animation-iteration-count: infinite;
 }
 
 .box {
@@ -277,18 +293,18 @@ a {
 }
 
 @keyframes box1{
-    0% {left: 37%}
-    10% {left: 21%}
+    0% {left: 33%}
+    10% {left: 17%}
     14% {background-color: #000071; border-color: #000071; color:white;}
     15% {background-color: aqua; border-color: aqua; color:#000071;}
     29% {background-color: aqua; border-color: aqua; color:#000071;}
     30% {background-color: #000071; border-color: #000071; color:white;}
-    32.5% {left: 21%}
-    42.5% {left: 37%}
+    32.5% {left: 17%}
+    42.5% {left: 33%}
 }
 
 .box-1 {
-    left: 37%;
+    left: 33%;
     background-color: #000071;
     color: white;
     animation-name: box1;
@@ -298,18 +314,18 @@ a {
 }
 
 @keyframes box2{
-    0% {left: 21%}
-    10% {left: 37%}
+    0% {left: 17%}
+    10% {left: 33%}
     14% {background-color: white; border-color: #000071;}
     15% {background-color: aqua; border-color: aqua;}
     29% {background-color: aqua; border-color: aqua;}
     30% {background-color: white; border-color: #000071;}
-    32.5% {left: 37%}
-    42.5% {left: 21%}
+    32.5% {left: 33%}
+    42.5% {left: 17%}
 }
 
 .box-2 {
-    left: 21%;
+    left: 17%;
     animation-name: box2;
     animation-duration: 8s;
     animation-delay: 2s;
@@ -317,14 +333,14 @@ a {
 }
 
 @keyframes box3 {
-    0% {left: 53%; bottom: 12.5%}
-    10% {left: 53%; bottom: 0%}
-    40% {left: 53%; bottom: 0%}
-    50% {left: 53%; bottom: 12.5%}
+    0% {left: 49%; bottom: 12.5%}
+    10% {left: 49%; bottom: 0%}
+    40% {left: 49%; bottom: 0%}
+    50% {left: 49%; bottom: 12.5%}
 }
 
 .box-3 {
-    left: 53%;
+    left: 49%;
     bottom: 12.5%;
     background-color: aqua;
     border-color: aqua;
@@ -335,18 +351,18 @@ a {
 }
 
 @keyframes box4 {
-    0% {left: 53%}
-    15% {left: 69%}
+    0% {left: 49%}
+    15% {left: 65%}
     39% {background-color: white; border-color: #000071;}
     40% {background-color: aqua; border-color: aqua;}
     54% {background-color: aqua; border-color: aqua;}
     55% {background-color: white; border-color: #000071;}
-    70% {left: 69%}
-    75% {left: 53%}
+    70% {left: 65%}
+    75% {left: 49%}
 }
 
 .box-4 {
-    left: 53%;
+    left: 49%;
     animation-name: box4;
     animation-duration: 8s;
     animation-iteration-count: infinite;
