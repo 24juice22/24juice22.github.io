@@ -3,6 +3,7 @@
     --color-secondary: aqua;
     --color-tertiary: #2b52ac;
     --color-body: #5c555c;
+    --color-project: rgb(32, 32, 32);
   }
 
 html {
@@ -388,6 +389,8 @@ a {
     padding: 10rem 0;
     background-color: var(--color-primary); 
     transform: skewY(-6deg);
+    position: relative;
+    z-index: 1;
 }
 
 .container__about-attributes {
@@ -433,7 +436,8 @@ a {
 
 #projects {
     height: 600px;
-    background-color: rgb(32, 32, 32);;
+    background-color: var(--color-project);
+    transform: translateY(-10%);
 }
 
 #contact {
