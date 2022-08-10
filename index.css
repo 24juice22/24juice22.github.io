@@ -18,10 +18,6 @@ ul {
     padding-left: 0;
 }
   
-a {
-    text-decoration: none;
-}
-  
 h1,
 h2,
 h3 {
@@ -46,12 +42,17 @@ h3 {
     border: none;
     border-radius: 8px;
     font-weight: bold;
+    font-size: 1.8rem;
     text-transform: uppercase;
 }
 
 .button-primary {
     background-color: #000071;
     color: aqua;
+}
+
+a {
+    text-decoration: none;
 }
   
 @media screen and (min-width: 1024px) {
@@ -188,8 +189,27 @@ h3 {
 }
 
 .about__body {
-    margin: 3rem 0;
+    margin: 3rem 0 4rem;
     font-size: 2rem;
+}
+
+.about__link {
+    display: block;
+    margin: 1.5rem 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #2b52ac;
+    cursor: pointer;
+}
+
+.link-content {
+    margin-right: .3rem;
+    transition: margin .15s;
+    text-transform: uppercase;
+}
+
+.link-content:hover {
+    margin-right: 1rem;
 }
 
 .animation-wrapper {
@@ -321,8 +341,8 @@ h3 {
     40% {background-color: aqua; border-color: aqua;}
     54% {background-color: aqua; border-color: aqua;}
     55% {background-color: white; border-color: #000071;}
-    80% {left: 69%}
-    87% {left: 53%}
+    70% {left: 69%}
+    75% {left: 53%}
 }
 
 .box-4 {
