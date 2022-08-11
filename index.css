@@ -206,28 +206,26 @@ a {
 }
 
 
-/* About */
-#about {
+/* Hero */
+#hero {
     padding-top: 2rem;
 }
 
-.container-about {
+.hero__container {
     padding-bottom: 3rem;
 }
 
-.about__title {
+.hero__title {
     color: var(--color-primary);
 }
 
-.about__body {
+.hero__tagline {
     margin: 3rem 0 3rem;
     font-size: 2rem;
     color: var(--color-body);
-    
-    
 }
 
-.about__link {
+.hero__link {
     display: block;
     margin: 1.5rem 0;
     font-size: 1.8rem;
@@ -236,17 +234,17 @@ a {
     cursor: pointer;
 }
 
-.link-content {
+.hero__link-content {
     margin-right: .3rem;
     transition: margin .15s;
     text-transform: uppercase;
 }
 
-.link-content:hover {
+.hero__link-content:hover {
     margin-right: 1rem;
 }
 
-.animation-wrapper {
+.hero__animation {
     margin-bottom: 10rem;
 }
 
@@ -263,7 +261,7 @@ a {
     100% {top: 7%; left: 20%;}
 }
 
-.about__img {
+.animation__img {
     width: 20rem;
     height: 21rem;
     border: 4px solid var(--color-primary);
@@ -292,7 +290,7 @@ a {
     transform: rotate(6deg);
 }
 
-@keyframes hmmm {
+@keyframes slide {
     0% {padding: 2.5rem 0}
     34% {background-color: white;}
     35% {padding: .5rem 0; background-color: var(--color-secondary);}
@@ -308,7 +306,7 @@ a {
     font-family: 'Roboto Slab', serif;
     margin: 0;
     padding: 2.5rem 0;
-    animation-name: hmmm;
+    animation-name: slide;
     animation-duration: 8s;
     animation-delay: .4s;
     animation-iteration-count: infinite;
@@ -337,7 +335,7 @@ a {
     42.5% {left: 33%}
 }
 
-.box-1 {
+.box--1 {
     left: 33%;
     background-color: var(--color-primary);
     color: white;
@@ -358,7 +356,7 @@ a {
     42.5% {left: 17%}
 }
 
-.box-2 {
+.box--2 {
     left: 17%;
     animation-name: box2;
     animation-duration: 8s;
@@ -373,7 +371,7 @@ a {
     50% {left: 49%; bottom: 12.5%}
 }
 
-.box-3 {
+.box--3 {
     left: 49%;
     bottom: 12.5%;
     background-color: var(--color-secondary);
@@ -395,7 +393,7 @@ a {
     75% {left: 49%}
 }
 
-.box-4 {
+.box--4 {
     left: 49%;
     animation-name: box4;
     animation-duration: 8s;
@@ -405,9 +403,7 @@ a {
 .box > p {
     font-size: 3.5rem;
     font-family: 'Roboto Slab', serif;
-
 }
-
 
 .about__attributes {
     padding: 10rem 0;
