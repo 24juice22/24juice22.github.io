@@ -132,44 +132,19 @@ a {
     margin: 0 1rem 0 0;
     color: var(--color-primary);
     font-size: 4rem;
-    letter-spacing: -1.3rem;
+    letter-spacing: -1.25rem;
 }
 
-.toggler {
-    color: var(--color-primary);
-    cursor: pointer;
-}
-
-.toggler__menu.hide {
-    display: none;
-}
-
-.toggler__closed {
-    display: none;
-}
-
-.toggler__closed.show {
-    display: flex;
+.navbar__logo.white {
+    color: white;
 }
 
 .navbar__list {
-    padding: 0 5rem;
-    height: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .35s, height .35s, visibility .2s;
-    width: 100%;
-}
-
-.navbar__list.active {
-    opacity: 1;
-    height: 12rem; 
-    visibility: visible;
+    display: none;
 }
 
 .navbar__list-item {
-    font-weight: 500;
-    text-align: center;
+    font-weight: 400;
 }
 
 .navbar__link {
@@ -197,23 +172,65 @@ a {
     transform: scale(1, 1);
 }
 
-@media screen and (min-width: 768px) {
-    .toggler {
-        display: none;
-    }
+.toggler {
+    color: var(--color-primary);
+    cursor: pointer;
+}
 
+.toggler.white {
+    color: white;
+}
+
+.toggler__menu.hide {
+    display: none;
+}
+
+.toggler__closed {
+    display: none;
+}
+
+.toggler__closed.show {
+    display: flex;
+}
+
+@media screen and (min-width: 768px) {
     .navbar__list {
-        width: auto;
         display: flex;
-        align-items: center;
-        visibility: visible;
-        max-height: 100%;
-        opacity: 1;
+        justify-content: end;
     }
 
     .navbar__list-item {
-        padding-left: 2.5rem;
+        padding: 0 2.5rem;
     }
+}
+
+.collapsible-menu {
+    z-index: 4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    background-color: #000071;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    height: 0%;
+}
+
+.collapsible-menu.good {
+    visibility: visible;
+    height: 100vh;
+}
+
+.collapsible-menu__list {
+    font-size: 3rem;
+}
+
+.collapsible-menu__link {
+    color: aqua;
+    line-height: 2;
+    font-size: 4rem;
 }
 
 
@@ -232,7 +249,7 @@ a {
 }
 
 .hero__tagline {
-    margin: 3rem 0 3rem;
+    margin: 3rem 0;
     font-size: 2rem;
     color: var(--color-body);
 }
