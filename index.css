@@ -143,6 +143,10 @@ a {
     display: none;
 }
 
+.navbar__list.hidden {
+    display: none;
+}
+
 .navbar__list-item {
     font-weight: 400;
 }
