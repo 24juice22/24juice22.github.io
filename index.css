@@ -193,17 +193,6 @@ a {
     display: flex;
 }
 
-@media screen and (min-width: 768px) {
-    .navbar__list {
-        display: flex;
-        justify-content: end;
-    }
-
-    .navbar__list-item {
-        padding: 0 2.5rem;
-    }
-}
-
 .collapsible-menu {
     z-index: 4;
     width: 100vw;
@@ -211,7 +200,7 @@ a {
     flex-direction: column;
     align-items: center; 
     justify-content: center;
-    background-color: #000071;
+    background-color: var(--color-primary);
     position: fixed;
     top: 0;
     opacity: 0;
@@ -220,7 +209,7 @@ a {
     transition: opacity .75s, height .75s, visibility .75s; 
 }
 
-.collapsible-menu.good {
+.collapsible-menu.collapse {
     opacity: 1;
     visibility: visible;
     height: 100vh;
@@ -231,11 +220,21 @@ a {
 }
 
 .collapsible-menu__link {
-    color: aqua;
+    color: var(--color-secondary);
     line-height: 2;
     font-size: 4rem;
 }
 
+@media screen and (min-width: 768px) {
+    .navbar__list {
+        display: flex;
+        justify-content: end;
+    }
+
+    .navbar__list-item {
+        padding: 0 2.5rem;
+    }
+}
 
 /* Hero */
 #hero {
