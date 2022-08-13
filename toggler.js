@@ -28,8 +28,8 @@ function hideNavList() {
     collapsibleMenu.classList.toggle("collapse");
     closed.classList.toggle("show");
     menu.classList.toggle("hide");
-    logo.classList.toggle("white");
-    toggler.classList.toggle("white")
+    logo.classList.toggle("collapse-white");
+    toggler.classList.toggle("collapse-white");
 }
 
 /////// Debounce Function ///////
