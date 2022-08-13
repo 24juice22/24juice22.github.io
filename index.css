@@ -450,7 +450,7 @@ a {
     }
 }
 
-.about__attributes {
+.about {
     padding: 10rem 0;
     background-color: var(--color-primary); 
     transform: skewY(-6deg);
@@ -458,16 +458,18 @@ a {
     z-index: 1;
 }
 
-.container__about-attributes {
+.container__about {
     transform: skewY(6deg);
 }
 
-.attribute {
+.about__attribute {
     display: flex;
+    flex-direction: column;
     margin-bottom: 2.5rem;
 }
 
 .attribute__icon {
+    width: 3rem;
     font-size: 3rem;
     font-weight: bold;
     color: white;
@@ -478,10 +480,6 @@ a {
 
 .attribute__icon-problem {
    padding: 1.2rem 1.1rem 1.4rem 1.5rem;
-}
-
-.attribute__info {
-    margin-left: 2rem;
 }
 
 .attribute__title {

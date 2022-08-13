@@ -8,7 +8,6 @@ let logo = document.querySelector(".navbar__logo");
 let collapsibleMenu = document.querySelector(".collapsible-menu");
 let about = document.querySelector(".about__attributes");
 
-console.log(logo.style);
 ////// adjust Toggler
 
 toggler.addEventListener("click", () => {
