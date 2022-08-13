@@ -146,6 +146,10 @@ a {
     color: white;
 }
 
+.navbar__logo.collapse-white {
+    color: white;
+}
+
 .navbar__list {
     display: none;
 }
@@ -190,6 +194,10 @@ a {
 }
 
 .toggler.white {
+    color: white;
+}
+
+.toggler.collapse-white {
     color: white;
 }
 

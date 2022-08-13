@@ -14,8 +14,8 @@ toggler.addEventListener("click", () => {
     collapsibleMenu.classList.toggle("collapse");
     closed.classList.toggle("show")
     menu.classList.toggle("hide")
-    logo.classList.toggle("white");
-    toggler.classList.toggle("white")
+    logo.classList.toggle("collapse-white");
+    toggler.classList.toggle("collapse-white")
 })
 
 /////// Hide Nav-List when Link is Clicked
