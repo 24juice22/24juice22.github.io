@@ -520,7 +520,6 @@ a {
 }
 
 #color-scheme {
-    height: 600px;
     margin: 10rem 0;
     text-align: center;
 }
@@ -546,6 +545,10 @@ a {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
+}
+
+.colors--original {
+    display: none;
 }
 
 .color {
@@ -579,6 +582,26 @@ a {
     background-color: rgb(255, 102, 0);
 }
 
+.color--blue {
+    background-color: #000071;
+}
+
+.color--gold {
+    background-color: rgb(207, 181, 59);;
+}
+
+.color--white {
+    background-color: white;
+    border: 1px solid #000071;
+    height: 2.3rem;
+}
+
+.color--aqua {
+    background-color: aqua;
+}
+
+
+
 #tech {
     padding: 7rem 0;
 }
@@ -586,7 +609,6 @@ a {
 #projects {
     height: 600px;
     background-color: var(--color-project);
-    transform: translateY(-10%);
 }
 
 #contact {
