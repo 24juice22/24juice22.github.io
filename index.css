@@ -34,7 +34,7 @@ h1 {
 }
   
 h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
   
 h3 {
@@ -53,7 +53,7 @@ h3 {
   }
   
   h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   
   h3 {
@@ -478,7 +478,6 @@ a {
 .about__title {
     color: white;
     margin-bottom: 5rem;
-    font-size: 3.5rem;
 }
 
 .about__attribute {
@@ -518,6 +517,66 @@ a {
     .container__about {
         padding: 15vw 0;
     }
+}
+
+#color-scheme {
+    height: 600px;
+    margin: 10rem 0;
+    text-align: center;
+}
+
+.color-scheme__title {
+    font-size: 3rem;
+    color: var(--color-primary);
+}
+
+.color-scheme__tagline {
+    font-size: 2rem;
+    margin: 3.5rem 0;
+}
+
+.colors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+}
+
+.colors__title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.color {
+    width: 10rem;
+    height: 2.5rem;
+    margin: .15rem;
+    border-radius: 8px;
+}
+
+.color--purple {
+    background-color: rgb(140, 0, 255);
+}
+
+.color--green {
+    background-color: rgb(21, 255, 0);
+}
+
+.color--black {
+    background-color: black;
+}
+
+.color--red {
+    background-color: red;
+}
+
+.color--yellow {
+    background-color: yellow;
+}
+
+.color--orange {
+    background-color: rgb(255, 102, 0);
 }
 
 #tech {
