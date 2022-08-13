@@ -3,6 +3,7 @@
     --color-secondary: aqua;
     --color-tertiary: #2b52ac;
     --color-body: #5c555c;
+    --color-white: white;
     --color-project: rgb(32, 32, 32);
 }
 
@@ -339,10 +340,10 @@ a {
 
 @keyframes slide {
     0% {padding: 2.5rem 0}
-    34% {background-color: white;}
+    34% {background-color: var(--color-white);}
     35% {padding: .5rem 0; background-color: var(--color-secondary);}
     49% {padding: .5rem 0; background-color: var(--color-secondary);}
-    50% {background-color: white;}
+    50% {background-color: var(--color-white);}
     100% {padding: 2.5rem 0}
 }
 
@@ -374,10 +375,10 @@ a {
 @keyframes box1{
     0% {left: 33%}
     10% {left: 17%}
-    14% {background-color: var(--color-primary); border-color: var(--color-primary); color:white;}
+    14% {background-color: var(--color-primary); border-color: var(--color-primary); color:var(--color-white);}
     15% {background-color: var(--color-secondary); border-color: var(--color-secondary); color:var(--color-primary);}
     29% {background-color: var(--color-secondary); border-color: var(--color-secondary); color:var(--color-primary);}
-    30% {background-color: var(--color-primary); border-color: var(--color-primary); color:white;}
+    30% {background-color: var(--color-primary); border-color: var(--color-primary); color:var(--color-white);}
     32.5% {left: 17%}
     42.5% {left: 33%}
 }
@@ -385,7 +386,7 @@ a {
 .box--1 {
     left: 33%;
     background-color: var(--color-primary);
-    color: white;
+    color: var(--color-white);
     animation-name: box1;
     animation-duration: 8s;
     animation-delay: 2s;
@@ -395,10 +396,10 @@ a {
 @keyframes box2{
     0% {left: 17%}
     10% {left: 33%}
-    14% {background-color: white; border-color: var(--color-primary);}
+    14% {background-color: var(--color-white); border-color: var(--color-primary);}
     15% {background-color: var(--color-secondary); border-color: var(--color-secondary);}
     29% {background-color: var(--color-secondary); border-color: var(--color-secondary);}
-    30% {background-color: white; border-color: var(--color-primary);}
+    30% {background-color: var(--color-white); border-color: var(--color-primary);}
     32.5% {left: 33%}
     42.5% {left: 17%}
 }
@@ -432,10 +433,10 @@ a {
 @keyframes box4 {
     0% {left: 49%}
     15% {left: 65%}
-    39% {background-color: white; border-color: var(--color-primary);}
+    39% {background-color: var(--color-white); border-color: var(--color-primary);}
     40% {background-color: var(--color-secondary); border-color:var(--color-secondary);}
     54% {background-color: var(--color-secondary); border-color: var(--color-secondary);}
-    55% {background-color: white; border-color: var(--color-primary);}
+    55% {background-color: var(--color-white); border-color: var(--color-primary);}
     70% {left: 65%}
     75% {left: 49%}
 }
@@ -484,7 +485,7 @@ a {
 }
 
 .about__title {
-    color: white;
+    color: var(--color-white);
     margin-bottom: 5rem;
 }
 
@@ -498,7 +499,7 @@ a {
     width: 3rem;
     font-size: 3rem;
     font-weight: bold;
-    color: white;
+    color: var(--color-white);
     padding: 1.2rem;
     border-radius: 50%;
     background-color: var(--color-tertiary);
@@ -540,6 +541,7 @@ a {
 .color-scheme__tagline {
     font-size: 2rem;
     margin: 3.5rem 0;
+    color: var(--color-body);
 }
 
 .colors {
@@ -553,6 +555,7 @@ a {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
+    color: var(--color-body);
 }
 
 .colors--original {
