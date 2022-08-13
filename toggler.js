@@ -6,7 +6,7 @@ let link = document.querySelectorAll(".collapsible-menu__link");
 let hero = document.querySelector(".hero__content");
 let logo = document.querySelector(".navbar__logo");
 let collapsibleMenu = document.querySelector(".collapsible-menu");
-let about = document.querySelector(".about__attributes");
+let about = document.querySelector(".about");
 
 ////// adjust Toggler
 
@@ -64,7 +64,10 @@ window.addEventListener("scroll", debounce(checkNavScroll))
 function logoColor(e) {
     const logoBottom = (window.scrollY + logo.offsetHeight);
     const aboutTop = about.offsetTop;
-    if (logoBottom > aboutTop) {
+    const aboutBottom = about.offsetTop + about.offsetHeight;
+    console.log(logoBottom);
+    console.log(aboutTop);
+    if (logoBottom > aboutTop && logoBottom < aboutBottom) {
         logo.classList.add("white");
         toggler.classList.add("white");
     }
