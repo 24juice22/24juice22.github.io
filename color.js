@@ -6,6 +6,10 @@ let borderedColor = document.querySelectorAll(".color--white");
 
 for (let i= 0; i < colors.length; i++) {
     colors[i].addEventListener("click", () => {
+        for (let i = 0; i < borderedColor.length; i++) {
+            borderedColor[i].style.border = "none";
+            borderedColor[i].style.height = "2.3rem";
+        }
         if (i === 0) {
             document.documentElement.style.setProperty("--color-primary", "rgb(140, 0, 255)");
             document.documentElement.style.setProperty("--color-secondary", "rgb(21, 255, 0");
@@ -13,11 +17,6 @@ for (let i= 0; i < colors.length; i++) {
             document.documentElement.style.setProperty("--color-body", "rgb(21, 255, 0");
             document.documentElement.style.setProperty("--color-white", "black");
             document.querySelector("body").style.backgroundColor = "black";
-        
-            for (let i = 0; i < borderedColor.length; i++) {
-                borderedColor[i].style.border = "none";
-                borderedColor[i].style.height = "2.3rem";
-            }
 
             colors[i].style.display = "none";
             missing.style.display = "flex";
@@ -34,11 +33,6 @@ for (let i= 0; i < colors.length; i++) {
 
             for (let i = 0; i < attributeBody.length; i++)
                 attributeBody[i].style.color = "black";
-            
-            for (let i = 0; i < borderedColor.length; i++) {
-                borderedColor[i].style.border = "none";
-                borderedColor[i].style.height = "2.3rem";
-            }
 
             colors[i].style.display = "none";
             missing.style.display = "flex";
@@ -56,11 +50,6 @@ for (let i= 0; i < colors.length; i++) {
 
             for (let i = 0; i < attributeBody.length; i++)
                 attributeBody[i].style.color = "black";
-
-            for (let i = 0; i < borderedColor.length; i++) {
-                borderedColor[i].style.border = "none";
-                borderedColor[i].style.height = "2.3rem";
-            }
 
             borderedColor = document.querySelectorAll(".color--blue");
     
@@ -84,11 +73,6 @@ for (let i= 0; i < colors.length; i++) {
 
             for (let i = 0; i < attributeBody.length; i++)
                 attributeBody[i].style.color = "white";
-
-            for (let i = 0; i < borderedColor.length; i++) {
-                borderedColor[i].style.border = "none";
-                borderedColor[i].style.height = "2.3rem";
-            }
 
             borderedColor = document.querySelectorAll(".color--white");
 
