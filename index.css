@@ -543,6 +543,7 @@ a {
 #color-scheme {
     padding: 10rem 0;
     position: relative;
+    overflow: hidden;
 }
 
 .color-scheme__title {
