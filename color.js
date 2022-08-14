@@ -13,7 +13,7 @@ for (let i= 0; i < colors.length; i++) {
         colors[i].style.display = "none";
         missing.style.display = "flex";
         missing = colors[i];
-        
+
         if (i === 0) {
             document.documentElement.style.setProperty("--color-primary", "rgb(140, 0, 255)");
             document.documentElement.style.setProperty("--color-secondary", "rgb(21, 255, 0");
@@ -26,7 +26,7 @@ for (let i= 0; i < colors.length; i++) {
             let attributeBody = document.querySelectorAll(".attribute__body");
             document.documentElement.style.setProperty("--color-primary", "yellow");
             document.documentElement.style.setProperty("--color-secondary", "red");
-            document.documentElement.style.setProperty("--color-tertiary", "rgb(255, 102, 0)");
+            document.documentElement.style.setProperty("--color-tertiary", "#ff5503");
             document.documentElement.style.setProperty("--color-body", "white");
             document.documentElement.style.setProperty("--color-white", "red");
             document.querySelector("body").style.backgroundColor = "red";
@@ -39,7 +39,7 @@ for (let i= 0; i < colors.length; i++) {
             let attributeBody = document.querySelectorAll(".attribute__body");
             document.documentElement.style.setProperty("--color-primary", "rgb(207, 181, 59");
             document.documentElement.style.setProperty("--color-secondary", "white");
-            document.documentElement.style.setProperty("--color-tertiary", "#2b52ac");
+            document.documentElement.style.setProperty("--color-tertiary", "white");
             document.documentElement.style.setProperty("--color-body", "white");
             document.documentElement.style.setProperty("--color-white", "#000071");
             document.querySelector("body").style.backgroundColor = "#000071";
