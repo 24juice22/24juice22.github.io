@@ -612,33 +612,38 @@ a {
 
 /* Projects */
 #projects {
-    background-color: var(--color-tertiary);
+    background: linear-gradient(var(--color-tertiary), var(--color-primary)); 
+    padding: 10rem 0;
 }
 
 .projects__title {
-    padding: 10rem 0;
+    padding-bottom: 5rem;
     margin-top: 0;
     text-align: center;
     color: var(--color-secondary);
 }
 
-.project {
-    padding-bottom: 15rem;
+.projects__card {
+    background-color: black;
+    border-radius: 1.5rem;
+    padding: 7rem 0;
+    margin-bottom: 5rem;
 }
 
 .project__image-background {
-    height: 44rem;
-    width: 28rem;
-    background: black;
+    height: 41rem;
+    width: 25rem;
+    background: linear-gradient(blue, aqua);
     border-radius: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .project__image {
-    height: 41rem;
-    width: 25rem;
+    height: 38rem;
+    width: 22rem;
     border-radius: 1.6rem;
 }
 
@@ -649,21 +654,23 @@ a {
 
 .project__description {
     color: var(--color-white);
-    padding: 3rem 0 1.5rem;
+    padding: 3rem 1.5rem 1.5rem;
     font-size: 2rem;
 }
 
 .project__tech-stack {
-    display: flex;
-    justify-content: center;
+    display: flex;   
 }
 
 .tech {
-    height: 6rem;
-    width: 6rem;
+    height: 5.5rem;
+    width: 5.5rem;
     border-radius: 1rem;
-    background-color: yellow;
     margin: 1rem;
+}
+
+.tech--react {
+    background-color: black;
 }
 
 #tech {
