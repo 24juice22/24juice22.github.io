@@ -542,18 +542,40 @@ a {
 
 #color-scheme {
     padding: 10rem 0;
-    text-align: center;
+    position: relative;
 }
 
 .color-scheme__title {
     font-size: 3rem;
     color: var(--color-primary);
+    width: 50vw;
 }
 
 .color-scheme__tagline {
     font-size: 2rem;
     margin: 3.5rem 0;
     color: var(--color-body);
+    width: 50vw;
+}
+
+.color-scheme__image-background {
+    height: 30rem;
+    width: 15rem;
+    background-color: rgb(24, 23, 23);
+    border-radius: 3rem;
+    box-shadow: 2px 2px 2px rgb(65, 64, 64);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8%;
+    right: -5%;
+    transform: rotate(-8deg);
+}
+
+.color-scheme__image {
+    height: 23rem;
+    width: 13rem;   
 }
 
 .colors {
