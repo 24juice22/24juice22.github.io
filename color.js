@@ -10,6 +10,10 @@ for (let i= 0; i < colors.length; i++) {
             borderedColor[i].style.border = "none";
             borderedColor[i].style.height = "2.3rem";
         }
+        colors[i].style.display = "none";
+        missing.style.display = "flex";
+        missing = colors[i];
+        
         if (i === 0) {
             document.documentElement.style.setProperty("--color-primary", "rgb(140, 0, 255)");
             document.documentElement.style.setProperty("--color-secondary", "rgb(21, 255, 0");
@@ -17,10 +21,6 @@ for (let i= 0; i < colors.length; i++) {
             document.documentElement.style.setProperty("--color-body", "rgb(21, 255, 0");
             document.documentElement.style.setProperty("--color-white", "black");
             document.querySelector("body").style.backgroundColor = "black";
-
-            colors[i].style.display = "none";
-            missing.style.display = "flex";
-            missing = colors[i]
         }
         else if (i === 1) {
             let attributeBody = document.querySelectorAll(".attribute__body");
@@ -33,10 +33,6 @@ for (let i= 0; i < colors.length; i++) {
 
             for (let i = 0; i < attributeBody.length; i++)
                 attributeBody[i].style.color = "black";
-
-            colors[i].style.display = "none";
-            missing.style.display = "flex";
-            missing = colors[i]
         }
         else if (i === 2) {
             let colorWhite = document.querySelectorAll(".color--white");
@@ -57,10 +53,6 @@ for (let i= 0; i < colors.length; i++) {
                 borderedColor[i].style.border = "1px solid aqua";
                 borderedColor[i].style.height = "2.3rem";
             }
-
-            colors[i].style.display = "none";
-            missing.style.display = "flex";
-            missing = colors[i];
         }
         else if (i === 3) {
             let attributeBody = document.querySelectorAll(".attribute__body");
@@ -80,10 +72,6 @@ for (let i= 0; i < colors.length; i++) {
                 borderedColor[i].style.border = "1px solid #000071";
                 borderedColor[i].style.height = "2.3rem";
             }
-            
-            colors[i].style.display = "none";
-            missing.style.display = "flex";
-            missing = colors[i];
         } 
     })  
 };
