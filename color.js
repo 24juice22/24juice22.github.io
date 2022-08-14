@@ -20,16 +20,14 @@ for (let i= 0; i < colors.length; i++) {
             document.documentElement.style.setProperty("--color-tertiary", "#ff00d4");
             document.documentElement.style.setProperty("--color-body", "rgb(21, 255, 0");
             document.documentElement.style.setProperty("--color-white", "black");
-            document.querySelector("body").style.backgroundColor = "black";
         }
         else if (i === 1) {
             let attributeBody = document.querySelectorAll(".attribute__body");
             document.documentElement.style.setProperty("--color-primary", "yellow");
             document.documentElement.style.setProperty("--color-secondary", "red");
-            document.documentElement.style.setProperty("--color-tertiary", "#ff5503");
+            document.documentElement.style.setProperty("--color-tertiary", "white");
             document.documentElement.style.setProperty("--color-body", "white");
             document.documentElement.style.setProperty("--color-white", "red");
-            document.querySelector("body").style.backgroundColor = "red";
 
             for (let i = 0; i < attributeBody.length; i++)
                 attributeBody[i].style.color = "black";
@@ -42,7 +40,6 @@ for (let i= 0; i < colors.length; i++) {
             document.documentElement.style.setProperty("--color-tertiary", "white");
             document.documentElement.style.setProperty("--color-body", "white");
             document.documentElement.style.setProperty("--color-white", "#000071");
-            document.querySelector("body").style.backgroundColor = "#000071";
 
             for (let i = 0; i < attributeBody.length; i++)
                 attributeBody[i].style.color = "black";
@@ -61,7 +58,6 @@ for (let i= 0; i < colors.length; i++) {
             document.documentElement.style.setProperty("--color-tertiary", "#2b52ac");
             document.documentElement.style.setProperty("--color-body", "#5c555c");
             document.documentElement.style.setProperty("--color-white", "white");
-            document.querySelector("body").style.backgroundColor = "white";
 
             for (let i = 0; i < attributeBody.length; i++)
                 attributeBody[i].style.color = "white";
