@@ -143,12 +143,12 @@ a {
     letter-spacing: -1.2rem;
 }
 
-.navbar__logo.white {
-    color: white;
+.navbar__logo.secondary {
+    color: var(--color-secondary);
 }
 
-.navbar__logo.collapse-white {
-    color: white;
+.navbar__logo.collapse-secondary {
+    color: var(--color-secondary);
 }
 
 .navbar__list {
@@ -194,12 +194,12 @@ a {
     cursor: pointer;
 }
 
-.toggler.white {
-    color: white;
+.toggler.secondary {
+    color: var(--color-secondary);
 }
 
-.toggler.collapse-white {
-    color: white;
+.toggler.collapse-secondary {
+    color: var(--color-secondary);
 }
 
 .toggler__menu.hide {

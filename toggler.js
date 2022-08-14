@@ -8,14 +8,14 @@ let logo = document.querySelector(".navbar__logo");
 let collapsibleMenu = document.querySelector(".collapsible-menu");
 let about = document.querySelector(".about");
 
-////// adjust Toggler
+////// adjust Toggler for Collapsible Menu
 
 toggler.addEventListener("click", () => {
     collapsibleMenu.classList.toggle("collapse");
     closed.classList.toggle("show")
     menu.classList.toggle("hide")
-    logo.classList.toggle("collapse-white");
-    toggler.classList.toggle("collapse-white")
+    logo.classList.toggle("collapse-secondary");
+    toggler.classList.toggle("collapse-secondary")
 })
 
 /////// Hide Nav-List when Link is Clicked
@@ -28,8 +28,8 @@ function hideNavList() {
     collapsibleMenu.classList.toggle("collapse");
     closed.classList.toggle("show");
     menu.classList.toggle("hide");
-    logo.classList.toggle("collapse-white");
-    toggler.classList.toggle("collapse-white");
+    logo.classList.toggle("collapse-secondary");
+    toggler.classList.toggle("collapse-secondary");
 }
 
 /////// Debounce Function ///////
@@ -68,12 +68,12 @@ function logoColor(e) {
     console.log(logoBottom);
     console.log(aboutTop);
     if (logoBottom > aboutTop && logoBottom < aboutBottom) {
-        logo.classList.add("white");
-        toggler.classList.add("white");
+        logo.classList.add("secondary");
+        toggler.classList.add("secondary");
     }
     else {
-        logo.classList.remove("white");
-        toggler.classList.remove("white");
+        logo.classList.remove("secondary");
+        toggler.classList.remove("secondary");
     }
 }
 
