@@ -509,11 +509,41 @@ a {
     display: flex;
     flex-direction: column;
     margin: 1rem;
+}
+
+.about__attribute-1 {
     opacity: 0;
     transition: opacity .5s;
 }
 
-.about__attribute.visible {
+.about__attribute-1.visible {
+    opacity: 1;
+}
+
+.about__attribute-2 {
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.about__attribute-2.visible {
+    opacity: 1;
+}
+
+.about__attribute-3 {
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.about__attribute-3.visible {
+    opacity: 1;
+}
+
+.about__attribute-4 {
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.about__attribute-4.visible {
     opacity: 1;
 }
 
