@@ -570,7 +570,8 @@ a {
     align-items: center;
     position: absolute;
     top: 8%;
-    right: -5%;
+    right: -60%;
+    transition: right .5s;
     transform: rotate(-8deg);
 }
 

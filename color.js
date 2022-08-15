@@ -1,7 +1,5 @@
 let colors = document.querySelectorAll(".colors");
-
 let missing = colors[3];
-
 let borderedColor = document.querySelectorAll(".color--white");
 
 for (let i= 0; i < colors.length; i++) {
@@ -71,3 +69,38 @@ for (let i= 0; i < colors.length; i++) {
         } 
     })  
 };
+
+/////// Debounce Function ///////
+function debounce(func, wait = 15, immediate = true) {
+    var timeout;
+    return function() {
+        var context = this, args = arguments;
+        var later = function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+    };
+}
+
+//////// Phone Image Slides In From Right //////////////
+let colorScheme = document.querySelector("#color-scheme");
+let colorSchemeTagline = document.querySelector(".color-scheme__tagline");
+let colorSchemeImage = document.querySelector(".color-scheme__image-background");
+
+function phoneSlide(e) {
+    const windowBottom = (window.scrollY + window.innerHeight);
+    const taglineBottom = colorScheme.offsetTop + colorSchemeTagline.offsetTop + (colorSchemeTagline.offsetHeight / 2);
+    const imageTop = colorScheme.offsetTop + colorSchemeImage.offsetTop;
+    console.log("windowBottom:  " + windowBottom);
+    console.log("taglineTop:  " + taglineBottom);
+    if (windowBottom > taglineBottom ) 
+        colorSchemeImage.style.right = "-5%";
+    else if (windowBottom < imageTop)
+        colorSchemeImage.style.right = "-60%";
+}
+
+window.addEventListener("scroll", debounce(phoneSlide));
