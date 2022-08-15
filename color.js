@@ -95,8 +95,6 @@ function phoneSlide(e) {
     const windowBottom = (window.scrollY + window.innerHeight);
     const taglineBottom = colorScheme.offsetTop + colorSchemeTagline.offsetTop + (colorSchemeTagline.offsetHeight / 2);
     const imageTop = colorScheme.offsetTop + colorSchemeImage.offsetTop;
-    console.log("windowBottom:  " + windowBottom);
-    console.log("taglineTop:  " + taglineBottom);
     if (windowBottom > taglineBottom ) 
         colorSchemeImage.style.right = "-5%";
     else if (windowBottom < imageTop)
