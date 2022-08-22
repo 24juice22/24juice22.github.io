@@ -1,5 +1,5 @@
 let colors = document.querySelectorAll(".colors");
-let missing = colors[3];
+let missingColors = colors[3];
 let borderedColor = document.querySelectorAll(".color--white");
 
 for (let i= 0; i < colors.length; i++) {
@@ -9,8 +9,8 @@ for (let i= 0; i < colors.length; i++) {
             borderedColor[i].style.height = "2.3rem";
         }
         colors[i].style.display = "none";
-        missing.style.display = "flex";
-        missing = colors[i];
+        missingColors.style.display = "flex";
+        missingColors = colors[i];
 
         if (i === 0) {
             document.documentElement.style.setProperty("--color-primary", "rgb(140, 0, 255)");
