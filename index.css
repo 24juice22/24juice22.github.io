@@ -19,10 +19,6 @@ body {
     background-color: var(--color-white);
 }
   
-img {
-    width: 100%;
-}
-  
 h1,
 h2,
 h3 {
@@ -41,8 +37,6 @@ h2 {
 h3 {
     font-size: 3rem;
 }
-
-
   
 @media screen and (min-width: 1024px) {
   body {
@@ -771,6 +765,8 @@ a {
 
 .tech__title {
     padding-bottom: 5rem;
+    text-align: center;
+    color: var(--color-primary);
 }
 
 .tech--large {
@@ -786,5 +782,13 @@ a {
 }
 
 #contact {
-    height: 600px;
+    background-color: var(--color-secondary);
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-primary);
+    padding: 5rem 0 10rem;
+}
+
+.contact__title {
+    margin-bottom: 5rem;
 }
