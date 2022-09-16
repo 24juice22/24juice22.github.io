@@ -782,13 +782,17 @@ a {
 }
 
 #contact {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     text-align: center;
     font-size: 2rem;
-    color: var(--color-primary);
+    color: var(--color-secondary);
     padding: 5rem 0 10rem;
 }
 
 .contact__title {
     margin-bottom: 5rem;
+}
+
+.contact__link {
+    color: var(--color-secondary);
 }
