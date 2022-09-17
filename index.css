@@ -10,12 +10,12 @@
 /* Scrolling */
 body {
     overflow-y: scroll;
-    position: initial;
+    touch-action: auto;
 }
 
 body.collapse {
     overflow-y: hidden;
-    position: fixed;
+    touch-action: none;
 }
 
 
