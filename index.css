@@ -11,10 +11,12 @@
 
 body {
     overflow: scroll;
+    position: initial;
 }
 
 body.collapse {
     overflow: hidden;
+    position: static;
 }
 
 /* Typography */
