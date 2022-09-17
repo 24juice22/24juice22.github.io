@@ -350,15 +350,13 @@ a {
 
 @keyframes slide {
     0% {padding: 2.5rem 0}
-    34% {background-color: var(--color-white);}
-    35% {padding: .5rem 0; background-color: var(--color-secondary);}
-    49% {padding: .5rem 0; background-color: var(--color-secondary);}
-    50% {background-color: var(--color-white);}
+    35% {padding: .5rem 0;}
+    49% {padding: .5rem 0; }
     100% {padding: 2.5rem 0}
 }
 
 .animation__box > p {
-    color: var(--color-primary);
+    color: var(--color-tertiary);
     font-weight: bold;
     font-size: 3.5rem;
     font-family: 'Roboto Slab', serif;
@@ -395,10 +393,6 @@ a {
 @keyframes box1{
     0% {left: 33%}
     10% {left: 17%}
-    14% {background-color: var(--color-primary); border-color: var(--color-primary); color:var(--color-white);}
-    15% {background-color: var(--color-secondary); border-color: var(--color-secondary); color:var(--color-primary);}
-    29% {background-color: var(--color-secondary); border-color: var(--color-secondary); color:var(--color-primary);}
-    30% {background-color: var(--color-primary); border-color: var(--color-primary); color:var(--color-white);}
     32.5% {left: 17%}
     42.5% {left: 33%}
 }
@@ -412,14 +406,10 @@ a {
 }
 
 @keyframes box2{
-    0% {left: 17%; background-color: var(--color-white); border-color: var(--color-primary);}
-    10% {left: 33%; background-color: var(--color-white); border-color: var(--color-primary);}
-    14% {background-color: var(--color-white); border-color: var(--color-primary);}
-    15% {background-color: var(--color-secondary); border-color: var(--color-secondary);}
-    29% {background-color: var(--color-secondary); border-color: var(--color-secondary);}
-    30% {background-color: var(--color-white); border-color: var(--color-primary);}
-    32.5% {left: 33%; background-color: var(--color-white); border-color: var(--color-primary);}
-    42.5% {left: 17%; background-color: var(--color-white); border-color: var(--color-primary);}
+    0% {left: 17%;}
+    10% {left: 33%;}
+    32.5% {left: 33%;}
+    42.5% {left: 17%;}
 }
 
 .box--3 {
@@ -450,10 +440,6 @@ a {
 @keyframes box4 {
     0% {left: 49%}
     15% {left: 65%}
-    39% {background-color: var(--color-white); border-color: var(--color-primary);}
-    40% {background-color: var(--color-secondary); border-color:var(--color-secondary);}
-    54% {background-color: var(--color-secondary); border-color: var(--color-secondary);}
-    55% {background-color: var(--color-white); border-color: var(--color-primary);}
     70% {left: 65%}
     75% {left: 49%}
 }
