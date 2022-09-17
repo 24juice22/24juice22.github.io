@@ -8,15 +8,12 @@
 }
 
 /* Scrolling */
-
-body {
-    overflow: scroll;
-    position: initial;
+html {
+    height: -webkit-fill-available;
 }
 
-body.collapse {
-    overflow: hidden;
-    position: static;
+body {
+    height: -webkit-fill-available;
 }
 
 /* Typography */
@@ -253,7 +250,7 @@ a {
 .collapsible-menu.collapse {
     opacity: 1;
     visibility: visible;
-    height: 100%;
+    height: 100vh;
 }
 
 .collapsible-menu__list {
