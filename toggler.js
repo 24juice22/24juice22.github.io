@@ -1,3 +1,4 @@
+let body = document.body;
 let toggler = document.querySelector(".toggler");
 let nav = document.querySelector(".navbar__list");
 let menu = document.querySelector(".toggler__menu");
@@ -16,6 +17,7 @@ toggler.addEventListener("click", () => {
     menu.classList.toggle("hide")
     logo.classList.toggle("collapse-secondary");
     toggler.classList.toggle("collapse-secondary")
+    body.classList.toggle("collapse");
 })
 
 /////// Hide Nav-List when Link is Clicked
@@ -30,6 +32,7 @@ function hideNavList() {
     menu.classList.toggle("hide");
     logo.classList.toggle("collapse-secondary");
     toggler.classList.toggle("collapse-secondary");
+    body.classList.toggle("collapse");
 }
 
 /////// Debounce Function ///////

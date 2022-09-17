@@ -7,6 +7,14 @@
     --color-project: rgb(32, 32, 32);
 }
 
+body {
+    overflow: scroll;
+}
+
+body.collapse {
+    overflow: hidden;
+}
+
 /* Typography */
 
 html {
@@ -802,5 +810,7 @@ a {
 }
 
 .contact__link {
+    display: block;
+    padding-bottom: 2rem;
     color: var(--color-secondary);
 }
