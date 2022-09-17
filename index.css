@@ -8,18 +8,16 @@
 }
 
 /* Scrolling */
-html {
-    height: -webkit-fill-available;
-}
-
 body {
-    height: -webkit-fill-available;
     overflow-y: scroll;
+    position: initial;
 }
 
 body.collapse {
     overflow-y: hidden;
+    position: fixed;
 }
+
 
 /* Typography */
 
