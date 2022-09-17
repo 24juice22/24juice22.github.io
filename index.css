@@ -308,7 +308,7 @@ a {
 
 .animation {
     height: 35rem;
-    width: 300px;
+    width: 30rem;
     position: relative;
     margin: 0 auto;
 }
@@ -348,13 +348,6 @@ a {
     transform: rotate(6deg);
 }
 
-@keyframes slide {
-    0% {padding: 2.5rem 0}
-    35% {padding: .5rem 0;}
-    49% {padding: .5rem 0; }
-    100% {padding: 2.5rem 0}
-}
-
 .animation__box > p {
     color: var(--color-tertiary);
     font-weight: bold;
@@ -366,6 +359,13 @@ a {
     animation-duration: 8s;
     animation-delay: .4s;
     animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+    0% {padding: 2.5rem 0}
+    35% {padding: .5rem 0;}
+    49% {padding: .5rem 0; }
+    100% {padding: 2.5rem 0}
 }
 
 .box {
@@ -453,11 +453,33 @@ a {
     #hero {
         padding-top: 7rem;
     }
-}
 
-@media  screen and (min-width: 768px) {
     .hero__tagline {
         max-width: 48rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .animation {
+        height: 45rem;
+        width: 33rem;
+    }
+
+    .animation__img {
+        width: 25rem;
+        height: 26rem;
+    }
+
+    .animation__box {
+        width: 25rem;
+        height: 26rem;
+    }
+
+    @keyframes slide {
+        0% {padding: 3.5rem 0}
+        35% {padding: 1.5rem 0;}
+        49% {padding: 1.5rem 0; }
+        100% {padding: 3.5rem 0}
     }
 }
 
