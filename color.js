@@ -95,10 +95,18 @@ function phoneSlide(e) {
     const windowBottom = (window.scrollY + window.innerHeight);
     const taglineBottom = colorScheme.offsetTop + colorSchemeTagline.offsetTop + (colorSchemeTagline.offsetHeight / 2);
     const imageTop = colorScheme.offsetTop + colorSchemeImage.offsetTop;
-    if (windowBottom > taglineBottom ) 
-        colorSchemeImage.style.right = "-5%";
+    if (windowBottom > taglineBottom) {
+        if (window.innerWidth < 768) 
+            colorSchemeImage.style.right = "-5%";
+        else if (window.innerWidth < 1024) 
+            colorSchemeImage.style.right = "5%";
+        else if (window.innerWidth < 1200) 
+            colorSchemeImage.style.right = "15%";
+        else 
+            colorSchemeImage.style.right = "20%";
+    }
     else if (windowBottom < imageTop)
-        colorSchemeImage.style.right = "-60%";
+            colorSchemeImage.style.right = "-60%"; 
 }
 
 window.addEventListener("scroll", debounce(phoneSlide));
