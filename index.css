@@ -598,6 +598,7 @@ a {
     }
 }
 
+/* Color SCheme */
 #color-scheme {
     padding: 10rem 0;
     position: relative;
@@ -643,6 +644,7 @@ a {
     flex-direction: column;
     align-items: center;
     margin: 3rem 0;
+    cursor: pointer;
 }
 
 .colors__title {
@@ -722,7 +724,7 @@ a {
     }
 
     .color {
-        width: 25rem;
+        width: 35vw;
     }
 }
 
@@ -740,7 +742,9 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-
+    .color {
+        height: 3.5rem;
+    }
 }
 
 /* Projects */
