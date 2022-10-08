@@ -6,11 +6,16 @@ for (let i= 0; i < colors.length; i++) {
     colors[i].addEventListener("click", () => {
         for (let i = 0; i < borderedColor.length; i++) {
             borderedColor[i].style.border = "none";
-            borderedColor[i].style.height = "2.3rem";
         }
         colors[i].style.display = "none";
         missingColors.style.display = "flex";
         missingColors = colors[i];
+
+        let secondaryButton = document.querySelectorAll(".btn--secondary");
+        for (let i = 0; i < secondaryButton.length; i++) {
+            secondaryButton[i].style.backgroundColor = "var(--color-secondary)";
+            secondaryButton[i].style.color = "var(--color-primary)";
+        }
 
         if (i === 0) {
             document.documentElement.style.setProperty("--color-primary", "rgb(140, 0, 255)");
@@ -28,7 +33,12 @@ for (let i= 0; i < colors.length; i++) {
             document.documentElement.style.setProperty("--color-white", "red");
 
             for (let i = 0; i < attributeBody.length; i++)
-                attributeBody[i].style.color = "black";
+                attributeBody[i].style.color = "black";  
+
+            for (let i = 0; i < secondaryButton.length; i++) {
+                secondaryButton[i].style.backgroundColor = "var(--color-tertiary)";
+                secondaryButton[i].style.color = "var(--color-secondary)";
+            }
         }
         else if (i === 2) {
             let colorWhite = document.querySelectorAll(".color--white");
@@ -43,11 +53,12 @@ for (let i= 0; i < colors.length; i++) {
                 attributeBody[i].style.color = "black";
 
             borderedColor = document.querySelectorAll(".color--blue");
-    
             for (let i= 0; i < borderedColor.length; i++) {
                 borderedColor[i].style.border = "1px solid aqua";
-                borderedColor[i].style.height = "2.3rem";
-            }
+            }   
+
+            for (let i = 0; i < secondaryButton.length; i++) 
+                secondaryButton[i].style.color = "var(--color-primary)";
         }
         else if (i === 3) {
             let attributeBody = document.querySelectorAll(".attribute__body");
@@ -61,10 +72,8 @@ for (let i= 0; i < colors.length; i++) {
                 attributeBody[i].style.color = "white";
 
             borderedColor = document.querySelectorAll(".color--white");
-
             for (let i = 0; i < borderedColor.length; i++) {
                 borderedColor[i].style.border = "1px solid #000071";
-                borderedColor[i].style.height = "2.3rem";
             }
         } 
     })  
