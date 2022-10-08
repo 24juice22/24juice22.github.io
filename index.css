@@ -691,10 +691,6 @@ a {
     background-color: yellow;
 }
 
-.color--orange {
-    background-color: rgb(255, 102, 0);
-}
-
 .color--blue {
     background-color: #000071;
 }
@@ -705,11 +701,18 @@ a {
 
 .color--white {
     background-color: white;
-    border: 1px solid #000071;
 }
 
 .color--aqua {
     background-color: aqua;
+}
+
+.outline--red {
+    border: 1px solid red;
+}
+
+.outline--blue {
+    border: 1px solid #000071;
 }
 
 @media screen and (min-width: 768px) {

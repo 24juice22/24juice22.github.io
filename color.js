@@ -53,9 +53,9 @@ for (let i= 0; i < colors.length; i++) {
                 attributeBody[i].style.color = "black";
 
             borderedColor = document.querySelectorAll(".color--blue");
-            for (let i= 0; i < borderedColor.length; i++) {
-                borderedColor[i].style.border = "1px solid aqua";
-            }   
+            
+                borderedColor[1].style.border = "1px solid aqua";
+          
 
             for (let i = 0; i < secondaryButton.length; i++) 
                 secondaryButton[i].style.color = "var(--color-primary)";
@@ -72,9 +72,8 @@ for (let i= 0; i < colors.length; i++) {
                 attributeBody[i].style.color = "white";
 
             borderedColor = document.querySelectorAll(".color--white");
-            for (let i = 0; i < borderedColor.length; i++) {
-                borderedColor[i].style.border = "1px solid #000071";
-            }
+            borderedColor[0].style.border = "1px solid red";
+            borderedColor[1].style.border = "1px solid #000071";
         } 
     })  
 };
