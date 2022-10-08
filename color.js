@@ -53,9 +53,7 @@ for (let i= 0; i < colors.length; i++) {
                 attributeBody[i].style.color = "black";
 
             borderedColor = document.querySelectorAll(".color--blue");
-            
-                borderedColor[1].style.border = "1px solid aqua";
-          
+            borderedColor[1].style.border = "1px solid aqua";
 
             for (let i = 0; i < secondaryButton.length; i++) 
                 secondaryButton[i].style.color = "var(--color-primary)";

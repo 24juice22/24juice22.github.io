@@ -8,6 +8,8 @@ let hero = document.querySelector(".hero__content");
 let logo = document.querySelector(".navbar__logo");
 let collapsibleMenu = document.querySelector(".collapsible-menu");
 let about = document.querySelector("#about");
+let project = document.querySelectorAll(".projects__card");
+let tech = document.querySelector("#tech");
 
 ////// adjust Toggler for Collapsible Menu
 
@@ -68,6 +70,9 @@ function logoColor(e) {
     const logoBottom = (window.scrollY + logo.offsetHeight);
     const aboutTop = about.offsetTop;
     const aboutBottom = about.offsetTop + about.offsetHeight;
+    const projectTop = project[0].offsetTop;
+    const projectMiddle = projectTop + (project[0].offsetHeight / 2);
+    const techTop = tech.offsetTop;
     if (logoBottom > aboutTop && logoBottom < aboutBottom) {
         logo.classList.add("secondary");
         toggler.classList.add("secondary");
@@ -75,6 +80,17 @@ function logoColor(e) {
     else {
         logo.classList.remove("secondary");
         toggler.classList.remove("secondary");
+    }
+
+    if (window.innerWidth > 1300) {
+        if (logoBottom > projectMiddle && logoBottom < techTop) {
+            logo.classList.add("secondary");
+            toggler.classList.add("secondary");
+        }
+        else if (logoBottom > techTop) {
+            logo.classList.remove("secondary");
+            toggler.classList.remove("secondary");
+        }
     }
 }
 
