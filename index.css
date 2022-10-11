@@ -640,8 +640,8 @@ a {
 }
 
 .color-scheme__image {
-    height: 23rem;
-    width: 13rem;   
+    height: 76.67%;
+    width: 88%;   
 }
 
 .colors {
@@ -722,11 +722,6 @@ a {
         top: 20%;
     }
     
-    .color-scheme__image {
-        height: 39rem;
-        width: 22rem;   
-    }
-    
     .colors {
         width: 35vw;
     }
@@ -741,11 +736,6 @@ a {
         height: 60rem;
         width: 30rem;
         top: 20%;
-    }
-    
-    .color-scheme__image {
-        height: 47rem;
-        width: 27rem;   
     }
 }
 

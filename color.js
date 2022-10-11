@@ -1,6 +1,7 @@
 let colors = document.querySelectorAll(".colors");
 let missingColors = colors[3];
 let borderedColor = document.querySelectorAll(".color--white");
+let phonePicture = document.querySelector(".color-scheme__image");
 
 for (let i= 0; i < colors.length; i++) {
     colors[i].addEventListener("click", () => {
@@ -16,6 +17,8 @@ for (let i= 0; i < colors.length; i++) {
             secondaryButton[i].style.backgroundColor = "var(--color-secondary)";
             secondaryButton[i].style.color = "var(--color-primary)";
         }
+
+        phonePicture.src = "./images/phone-pic.png";
 
         if (i === 0) {
             document.documentElement.style.setProperty("--color-primary", "rgb(140, 0, 255)");
@@ -39,6 +42,8 @@ for (let i= 0; i < colors.length; i++) {
                 secondaryButton[i].style.backgroundColor = "var(--color-tertiary)";
                 secondaryButton[i].style.color = "var(--color-secondary)";
             }
+
+            phonePicture.src = "./images/phone-pic-cosmic.png"
         }
         else if (i === 2) {
             let colorWhite = document.querySelectorAll(".color--white");
