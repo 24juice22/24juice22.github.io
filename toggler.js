@@ -72,8 +72,13 @@ function logoColor(e) {
     const aboutBottom = about.offsetTop + about.offsetHeight;
     const projectTop = project[0].offsetTop;
     const projectMiddle = projectTop + (project[0].offsetHeight / 2);
+    const lastProjectBottom = project[1].offsetTop + project[1].offsetHeight;
     const techTop = tech.offsetTop;
     if (logoBottom > aboutTop && logoBottom < aboutBottom) {
+        logo.classList.add("secondary");
+        toggler.classList.add("secondary");
+    }
+    else if (logoBottom > lastProjectBottom && logoBottom < techTop) {
         logo.classList.add("secondary");
         toggler.classList.add("secondary");
     }
