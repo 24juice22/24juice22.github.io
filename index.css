@@ -750,6 +750,7 @@ a {
 #projects {
     background: linear-gradient(var(--color-tertiary) 10%, var(--color-primary)); 
     padding: 8rem 0;
+    position: relative;
 }
 
 .projects__container {
